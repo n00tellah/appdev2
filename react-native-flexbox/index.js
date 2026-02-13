@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import DirectionLayout from './LayoutDirection';
+import JustifyContentBasics from './JustifyContent';
 
-registerRootComponent(FlexDirectionBasics);
+registerRootComponent(JustifyContentBasics);
