@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import FlexDirectionBasics from './Flex Direction';
+import DirectionLayout from './LayoutDirection';
 
 registerRootComponent(FlexDirectionBasics);
