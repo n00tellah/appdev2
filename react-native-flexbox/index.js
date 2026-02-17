@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import AlignItemsLayout from './AlignItems';
+import AlignSelfLayout from './AlignSelf';
 
-registerRootComponent(AlignItemsLayout);
+registerRootComponent(AlignSelfLayout);
