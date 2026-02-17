@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import AlignContentLayout from './AlignContent';
+import FlexWrapLayout from './FlexWrap';
 
-registerRootComponent(AlignContentLayout);
+registerRootComponent(FlexWrapLayout);
