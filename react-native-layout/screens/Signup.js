@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Signup() {
+export default function Signup({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Sign Up</Text>
@@ -52,12 +52,12 @@ export default function Signup() {
         />
       </View>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Todo')}>
         <Text style={styles.buttonText}>Sign Up</Text>
         <Ionicons name="checkmark-circle" size={20} color="#fff" style={styles.buttonIcon} />
       </TouchableOpacity>
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text style={styles.linkText}>Already have an account? Login</Text>
       </TouchableOpacity>
     </View>
