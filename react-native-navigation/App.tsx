@@ -40,15 +40,23 @@ function DetailsScreen({ route }) {
       <Text>itemId: {JSON.stringify(itemId)}</Text>
       <Text>otherParam: {JSON.stringify(otherParam)}</Text>
       <Button
-        onPress={
-          () =>
-            navigation.push('Details', {
-              // Randomly generate an ID for demonstration purposes
-              itemId: Math.floor(Math.random() * 100),
-            })
+        onPress={() =>
+          navigation.push('Details', {
+            // Randomly generate an ID for demonstration purposes
+            itemId: Math.floor(Math.random() * 100),
+          })
         }
       >
         Go to Details... again
+      </Button>
+      <Button
+        onPress={() =>
+          navigation.setParams({
+            itemId: Math.floor(Math.random() * 100),
+          })
+        }
+      >
+        Update params
       </Button>
     </View>
   );
@@ -69,4 +77,3 @@ const Navigation = createStaticNavigation(RootStack);
 export default function App() {
   return <Navigation />;
 }
-
